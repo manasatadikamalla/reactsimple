@@ -6,13 +6,13 @@ import LifeCycle from './LifeCycle.js';
 import Agenda from './agenda.js';
 import App from './App';
 import './App.css';
-import {BrowserRouter, Routes, Route
+import {HashRouter, Routes, Route
 } from "react-router-dom";
 
 export default function Routing()
 {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Routes>
 				<Route path="/" element={<Home/>}/>
 				<Route path="/ticTacToe" element={<Game/>}/>
@@ -21,6 +21,6 @@ export default function Routing()
 				<Route path="/ReduxActions" element={<App/>}/>
 				<Route path="/Agenda" element={<Agenda/>}/>
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
