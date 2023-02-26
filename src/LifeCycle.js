@@ -1,6 +1,6 @@
 // JavaScript source code
 import React from 'react';
-import Routing from './routes.js';
+
 import './App.css';
 import { Link } from "react-router-dom";
 

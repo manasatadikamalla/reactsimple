@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+
 import './App.css';
 
 class Agenda extends React.Component{
@@ -116,9 +116,9 @@ class Agenda extends React.Component{
 			<div>
 			<h1 className="mx-5 mb-5">Agenda Manager</h1>
 			{/* show/hide this following add agenda template */}
-			<div className="container" role="addAgenda">
+			<div className="container">
 			{this.state.enableAddAgedaDiv && <div>
-			<button className="btn btn-info" role="goToView" onClick = {this.viewAgendaClick}>Click To View Agenda</button>
+			<button className="btn btn-info" onClick = {this.viewAgendaClick}>Click To View Agenda</button>
 
 			<div className="my-3">
 			<label className="form-label">Title</label>
@@ -163,9 +163,9 @@ class Agenda extends React.Component{
 			</small>
 			</div>
 			{/* on click should add topics and disable the button if invalid topic */}
-			<button className="btn btn-success addAlign" role="addTopicBtn" onClick={this.addTopicsClick} disabled={this.state.topicButtonDisable}>+Add Topic</button>
+			<button className="btn btn-success addAlign"  onClick={this.addTopicsClick} disabled={this.state.topicButtonDisable}>+Add Topic</button>
 			{/* on click should add agenda details and disable the buton if invalid inputs */}
-			<button className="btn btn-success addAlign" role="submitAgendaBtn" onClick={this.submitAgendaButton} disabled={this.state.topicSubmitButtonDisable}>Submit Agenda</button>
+			<button className="btn btn-success addAlign"  onClick={this.submitAgendaButton} disabled={this.state.topicSubmitButtonDisable}>Submit Agenda</button>
 
 			{/* show if no topics added yet */}
 			{this.state.topicButtonDisable && 
@@ -177,12 +177,12 @@ class Agenda extends React.Component{
 
 			{/* display the list of topics added using li */}
 			{this.state.enableTopicsDiv && 
-			<div className="container" role="addTopics">
+			<div className="container" >
 			<div className="card my-3">
 			<div className="card-header">Added Topics</div>
 			<div className="card-body">
 			<ul className="list-group">{this.state.topics.map(item => {
-			return <li className="list-group-item" role="topicList">{item}</li>;})}
+			return <li className="list-group-item" >{item}</li>;})}
 			</ul>
 			</div>
 			<div className="card-footer">Refer the topics you added</div>
@@ -192,14 +192,14 @@ class Agenda extends React.Component{
 			}
 			</div>
 			{/* show/hide this following view agenda template */}
-			{this.state.viewAgendaEnableDiv && <div className="container" role="viewAgenda">
-			<button className="btn btn-info" role="goToAdd" onClick={this.addAgendaClick}>Click on add Agenda</button>
+			{this.state.viewAgendaEnableDiv && <div className="container" >
+			<button className="btn btn-info"  onClick={this.addAgendaClick}>Click on add Agenda</button>
 			{/* iterate the agenda details to display */}
 			{this.state.agendaDetails.map(det => {
 				return (
 			
 
-			<div className="card my-3" role="cards">
+			<div className="card my-3" >
 			<div className="card-header">
 			{/* {title} */det.title}
 			</div>

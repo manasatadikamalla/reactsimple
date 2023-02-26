@@ -1,8 +1,7 @@
 import React from 'react';
-import Game from './Square.js';
-import DayCalc from './DayCalculation.js';
+
 import {Link} from "react-router-dom";
-import Agenda from './agenda.js';
+
 import './App.css';
 
 class Home extends React.Component{
