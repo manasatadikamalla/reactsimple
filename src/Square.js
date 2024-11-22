@@ -28,8 +28,8 @@ class Board extends React.Component {
         var key=e.target.name;
         const count = this.state.count;
         this.setState({ count: count + 1 });
-        if(key === 0){   
-        if(this.state.count%2 === 0)
+        if(key == 0){   
+        if(this.state.count%2 == 0)
         {
             this.setState({box0:'o'})
             this.setState({status:'x'})
@@ -40,9 +40,9 @@ class Board extends React.Component {
             this.setState({status:'o'})
         }
         }
-        else if(key === 1){
+        else if(key == 1){
     
-        if(this.state.count%2 === 0)
+        if(this.state.count%2 == 0)
         {
             this.setState({box1:'o'})
             this.setState({status:'x'})
@@ -53,9 +53,9 @@ class Board extends React.Component {
             this.setState({status:'o'})
         }
         }
-        else if(key === 2){
+        else if(key == 2){
     
-        if(this.state.count%2 === 0)
+        if(this.state.count%2 == 0)
         {
             this.setState({box2:'o'})
             this.setState({status:'x'})
@@ -66,9 +66,9 @@ class Board extends React.Component {
             this.setState({status:'o'})
         }
         }
-        else if(key === 3){
+        else if(key == 3){
     
-        if(this.state.count%2 === 0)
+        if(this.state.count%2 == 0)
         {
             this.setState({box3:'o'})
             this.setState({status:'x'})
@@ -79,9 +79,9 @@ class Board extends React.Component {
             this.setState({status:'o'})
         }
         }
-        else if(key === 4){
+        else if(key == 4){
     
-        if(this.state.count%2 === 0)
+        if(this.state.count%2 == 0)
         {
             this.setState({box4:'o'})
             this.setState({status:'x'})
@@ -92,9 +92,9 @@ class Board extends React.Component {
             this.setState({status:'0'})
         }
         }
-        else if(key === 5){
+        else if(key == 5){
     
-        if(this.state.count%2 === 0)
+        if(this.state.count%2 == 0)
         {
             this.setState({box5:'o'})
             this.setState({status:'x'})
@@ -105,9 +105,9 @@ class Board extends React.Component {
             this.setState({status:'o'})
         }
         }
-        else if(key === 6){
+        else if(key == 6){
     
-        if(this.state.count%2 === 0)
+        if(this.state.count%2 == 0)
         {
             this.setState({box6:'o'})
             this.setState({status:'x'})
@@ -118,9 +118,9 @@ class Board extends React.Component {
             this.setState({status:'o'})
         }
         }
-        else if(key === 7){
+        else if(key == 7){
     
-        if(this.state.count%2 === 0)
+        if(this.state.count%2 == 0)
         {
             this.setState({box7:'o'})
             this.setState({status:'x'})
@@ -131,9 +131,9 @@ class Board extends React.Component {
             this.setState({status:'o'})
         }
         }
-        else if(key === 8){
+        else if(key == 8){
     
-        if(this.state.count%2 === 0)
+        if(this.state.count%2 == 0)
         {
             this.setState({box8:'o'})
             this.setState({status:'x'})
@@ -152,39 +152,40 @@ class Board extends React.Component {
     {
         value=this.state.box0;
     }
-    else if(i === 1)
+    else if(i == 1)
     {
         value=this.state.box1;
     }
-    else if(i === 2)
+    else if(i == 2)
     {
         value=this.state.box2;
     }
-    else if(i === 3)
+    else if(i == 3)
     {
         value=this.state.box3;
     }
-    else if(i === 4)
+    else if(i == 4)
     {
         value=this.state.box4;
     }
 
-    else if(i === 5)
+    else if(i == 5)
     {
         value=this.state.box5;
     }
-    else if(i === 6)
+    else if(i == 6)
     {
         value=this.state.box6;
     }
-    else if(i === 7)
+    else if(i == 7)
     {
         value=this.state.box7;
     }
-    else if(i === 8)
+    else if(i == 8)
     {
         value=this.state.box8;
     }
+    
     return <button name={i} className="square" style={{padding:15}} onClick={this.handleClick}>{value}</button>;
   }
   winner = ()=>
