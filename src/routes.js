@@ -4,6 +4,7 @@ import Game from './Square.js';
 import DayCalc from './DayCalculation.js';
 import LifeCycle from './LifeCycle.js';
 import Agenda from './agenda.js';
+import Products from './Products.js';
 import App from './App';
 import './App.css';
 import {HashRouter, Routes, Route
@@ -20,6 +21,7 @@ export default function Routing()
 				<Route path="/lifeCycle" element={<LifeCycle/>}/>
 				<Route path="/ReduxActions" element={<App/>}/>
 				<Route path="/Agenda" element={<Agenda/>}/>
+				<Route path="/Products" element={<Products/>}/>
 			</Routes>
 		</HashRouter>
 	);

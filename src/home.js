@@ -9,24 +9,36 @@ class Home extends React.Component{
 	{
 		return(
 			<div>
-				<h1>React Learning</h1>
-				 <ul>
-                    <li>
+				<h1 style={{
+                    color:'magenta'
+                }}>React Learning</h1>
+				 
+                    <button style={{
+          width: 200
+        }}>
                         <Link to="/ticTacToe">Tic Tac Toe</Link>
-                    </li>
-                    <li>
+                    </button>
+                    <button style=
+                    {{width:200}}>
                         <Link to="/DayCalculation">Day Calculation</Link>
-                    </li>
-					<li>
+                    </button>
+					<button style=
+                    {{width:200}}>
                         <Link to="/lifeCycle">Life Cycle Methods</Link>
-                    </li>
-					<li>
+                    </button>
+					<button style=
+                    {{width:200}}>
                         <Link to="/ReduxActions">Redux Actions increment</Link>
-                    </li>
-					<li>
+                    </button>
+					<button style=
+                    {{width:200}}>
                         <Link to="/Agenda">Agenda</Link>
-                    </li>
-                 </ul>
+                    </button>
+                    <button style=
+                    {{width:200}}>
+                        <Link to="/Products">Products</Link>
+                    </button>
+                 
 			</div>
 		);
 	}
