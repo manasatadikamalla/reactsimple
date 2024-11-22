@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/reactsimple/static/css/main.dfb5b820.chunk.css",
-    "main.js": "/reactsimple/static/js/main.57e4f504.chunk.js",
-    "main.js.map": "/reactsimple/static/js/main.57e4f504.chunk.js.map",
+    "main.css": "/reactsimple/static/css/main.d1b05096.chunk.css",
+    "main.js": "/reactsimple/static/js/main.af95f14e.chunk.js",
+    "main.js.map": "/reactsimple/static/js/main.af95f14e.chunk.js.map",
     "runtime-main.js": "/reactsimple/static/js/runtime-main.4d02cc0b.js",
     "runtime-main.js.map": "/reactsimple/static/js/runtime-main.4d02cc0b.js.map",
     "static/js/2.cbd3419c.chunk.js": "/reactsimple/static/js/2.cbd3419c.chunk.js",
@@ -10,15 +10,15 @@
     "static/js/3.632ff8cc.chunk.js": "/reactsimple/static/js/3.632ff8cc.chunk.js",
     "static/js/3.632ff8cc.chunk.js.map": "/reactsimple/static/js/3.632ff8cc.chunk.js.map",
     "index.html": "/reactsimple/index.html",
-    "precache-manifest.2629a5de35008317ce3c5b44b3562db3.js": "/reactsimple/precache-manifest.2629a5de35008317ce3c5b44b3562db3.js",
+    "precache-manifest.37faaf893400ea731671c7be3fd87b9c.js": "/reactsimple/precache-manifest.37faaf893400ea731671c7be3fd87b9c.js",
     "service-worker.js": "/reactsimple/service-worker.js",
-    "static/css/main.dfb5b820.chunk.css.map": "/reactsimple/static/css/main.dfb5b820.chunk.css.map",
+    "static/css/main.d1b05096.chunk.css.map": "/reactsimple/static/css/main.d1b05096.chunk.css.map",
     "static/js/2.cbd3419c.chunk.js.LICENSE.txt": "/reactsimple/static/js/2.cbd3419c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4d02cc0b.js",
     "static/js/2.cbd3419c.chunk.js",
-    "static/css/main.dfb5b820.chunk.css",
-    "static/js/main.57e4f504.chunk.js"
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.af95f14e.chunk.js"
   ]
 }
