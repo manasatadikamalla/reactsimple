@@ -93,7 +93,8 @@ class DayCalc extends React.Component{
 				Enter date: <input type="date" onChange={this.setDate}></input>
 				<button onClick={this.calculateDay}>Submit</button>
 				<p>Day selected is {this.state.day}</p>
-				<div>
+				<p>{this.setDate === null ? 'value is null' : 'value is not null'}</p>
+				<div> 
 					<ul>
 						<li><Link to="/">Home</Link></li>
 						<li><Link to="/ticTacToe">Tic Tac Toe</Link></li>
